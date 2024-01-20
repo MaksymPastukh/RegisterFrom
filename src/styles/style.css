@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Nonito;
+    src: url("../assets/fonts/Nunitoregular.woff");
+}
+
+@font-face {
+    font-family: Nonito;
+    src: url("../assets/fonts/Nunitobold.woff");
+    font-weight: bold;
+}
+
+body {
+    font-family: Nonito, sans-serif;
+    overflow-x: hidden;
+    background: linear-gradient(to left, #F8F8FA 50%, #ffff 0%);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.main .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+.form .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    justify-items: center;
+    position: relative;
+    padding: 112px 0 191px 0;
+}
+
+.logo {
+    width: 262px;
+    margin-top: 27px;
+    margin-right: 6px;
+    height: 55px;
+    z-index: 9;
+}
+
+
+.main-form {
+    z-index: 9;
+}
+
+.main-title {
+    max-width: 496px;
+    color: #000;
+    font-family: Nunito, sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    margin-bottom: 7px;
+    z-index: 9;
+}
+
+.main-sub-title {
+
+    max-width: 496px;
+    color: #636363;
+    font-family: Nunito, sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 27px; /* 122.727% */
+    margin-bottom: 42px;
+}
+
+
+.form-control {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.form-control label {
+    display: block;
+    color: #C6C6C4;
+    font-family: Nunito, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 27px; /* 168.75% */
+}
+
+.form-control .input {
+    width: 452px;
+    height: 35px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #C6C6C4;
+}
+
+.form-control input ::placeholder {
+    color: #323232;
+    font-family: Nunito, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 27px; /* 135% */
+}
+
+
+.form-input-error {
+    border-bottom: 3px solid #D76363;
+}
+
+
+.form-checkbox input {
+    width: 16px;
+    height: 16px;
+    margin-top: 10px;
+    margin-right: 10px;
+    cursor: pointer
+}
+
+
+.form-checkbox label {
+    margin-top: 30px;
+    color: #636363;
+    font-family: Nunito, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 27px;
+}
+
+.btn {
+    width: 210px;
+    height: 70px;
+    border-radius: 40px;
+    background: #DD3142;
+    text-align: center;
+    color: #FFF;
+    border: none;
+    font-family: Nunito, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 27px;
+    margin: 40px 0 0 124px;
+    cursor: pointer;
+}
+
+.form-lick {
+    margin: 44px 0 0 137px;
+}
+
+.form-lick a {
+    text-decoration: none;
+    color: #636363;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 27px;
+}
+
+
+.main-image {
+    position: relative;
+    margin-top: 55px;
+    width: 543px;
+}
+
+
+.popup {
+    width: 100%;
+    min-height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    display: none;
+    position: fixed;
+    top: 0;
+    z-index: 100000000000;
+}
+
+.popup .popup-content {
+    margin: 140px auto 0 auto;
+    width: 500px;
+    height: 128px;
+    padding: 25px;
+    color: #D76363;
+    font-size: 19px;
+    background-color: #c5c5c5;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #000;
+    position: relative;
+    text-align: center;
+
+    z-index: 100000000000;
+}
+
+.popup-content .btn {
+    position: absolute;
+    top: 45px;
+    right: 161px;
+    cursor: pointer;
+    z-index: 100000000000;
+}
+
+.error-input {
+    color: red;
+    font-size: 12px;
+    margin: 5px 0 5px 0;
+    position: absolute;
+    display: none;
+    transform: translateY(150%);
+    bottom: 0;
+    left: 10px;
+}
+
+.error-input-login {
+    display: none;
+    color: red;
+    font-size: 12px;
+    margin: 5px 0 5px 0;
+    position: absolute;
+    transform: translateY(150%);
+    bottom: 0;
+    left: 10px;
+}
+
+.error-input-pass {
+    display: none;
+    color: red;
+    font-size: 12px;
+    margin: 5px 0 5px 0;
+    position: absolute;
+    transform: translateY(150%);
+    bottom: 0;
+    left: 10px;
+}

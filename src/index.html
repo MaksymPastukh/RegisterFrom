@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+</head>
+<body>
+
+<section class="main">
+    <div class="popup">
+        <div class="popup-content">
+            A link has been sent to your email, please click on it to complete your registration
+            <div class="popup-btn">
+                <button class="btn btn-ok" type="submit">OK</button>
+            </div>
+        </div>
+    </div>
+    <div class="popup popupCheck">
+        <div class="popup-content">
+            An account with the specified username or email is already registered
+            <div class="popup-btn">
+                <button class="btn btn-ok ok" type="submit">OK</button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <img class="logo" src="assets/images/homeWorks.svg" alt="Логотип">
+    </div>
+    <section class="form">
+        <div class="container">
+            <div class="main-form">
+                <div class="main-title">
+                    Get your free account
+                </div>
+                <div class="main-sub-title">
+                    Try homeWorks BUSINESS free for 15 days. Downgrade to Basic (Free Forever)
+                    anytime.
+                </div>
+                <form id="form" class="form">
+                    <div class="form-control  user-login">
+                        <label for="name">Full Name</label>
+                        <input id="name" name="name" class="input" placeholder="Antony Swarowski"/>
+                        <div class="error-input">Full Name - can only contain letters and a space</div>
+
+                    </div>
+                    <div class="form-control">
+                        <label for="username">Your username</label>
+                        <input type="text" name="user-name" class="input" id="username"/>
+                        <div class="error-input">Your username - can only contain letters, numbers, underscores, and dashes</div>
+                        <div class="error-input-login">Invalid login entered</div>
+                    </div>
+                    <div class="form-control user-login ">
+                        <label for="email">Email</label>
+                        <input type="text" name="email" class="input" id="email" placeholder=""/>
+                        <div class="error-input">Email must be correct</div>
+                    </div>
+                    <div class="form-control">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" class="input" id="password" placeholder=""/>
+                        <div class="error-input">min of 8 characters,one upper case letter, least one number, least one special character</div>
+                        <div class="error-input-pass">Invalid password entered</div>
+                    </div>
+                    <div class="form-control  user-login">
+                        <label for="password2">Confirm password</label>
+                        <input
+                                class="input"
+                                name="confirmPassword"
+                                type="password"
+                                id="password2"
+                                placeholder=""
+                        />
+                        <div class="error-input">Password and Repeat Password must match</div>
+                    </div>
+                    <div class="user-login form-checkbox">
+                        <label class="error-text">
+                            <input type="checkbox" id="checkbox" name="scales"/> Agree to our Terms of Service and
+                            Privacy Statement
+                        </label>
+                    </div>
+                    <button class="btn btnSing" id="btn" type="submit">Sign Up</button>
+                    <div class="form-lick" id="link">
+                        <a href="#" id="links">Already have an account?</a>
+                    </div>
+                </form>
+            </div>
+            <div class="main-image">
+                <img src="assets/images/image.png" alt="Главная каритнка">
+            </div>
+        </div>
+    </section>
+</section>
+<script src="scripts/main.js"></script>
+</body>
+</html>
