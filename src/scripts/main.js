@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', function (e) {
     e.preventDefault()
+    //sVfesd@d12F
+
 
     const form = document.querySelectorAll('form'), resetFrom = document.getElementById('form'),
         fullName = document.getElementById('name'), userName = document.getElementById('username'),
